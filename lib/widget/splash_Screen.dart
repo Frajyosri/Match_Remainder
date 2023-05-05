@@ -16,7 +16,7 @@ class _SpalshscreenState extends State<Spalshscreen> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    Future.delayed(const Duration(seconds: 5)).then((value) =>
+    Future.delayed(const Duration(seconds: 3)).then((value) =>
         Navigator.of(context).pushReplacement(
             MaterialPageRoute(builder: (context) => const loginPage())));
   }
