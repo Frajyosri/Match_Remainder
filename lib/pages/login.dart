@@ -126,7 +126,8 @@ class _loginPageState extends State<loginPage> {
                                   Text(
                                     "Connexion",
                                     style: TextStyle(
-                                        color: Colors.green, fontSize: 20),
+                                        color: Color.fromARGB(179, 76, 175, 79),
+                                        fontSize: 20),
                                   )
                                 ],
                               ),

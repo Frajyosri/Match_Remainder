@@ -47,7 +47,7 @@ class _DemandeMantenanceState extends State<DemandeMantenance> {
                             child: const Padding(
                               padding: EdgeInsets.all(10.0),
                               child: Text(
-                                "Vous Avez Une Demande De reservation Pour le 5/6/2023 ",
+                                "Vous Avez Une Demande De Maintenance Pour le 5/6/2023 ",
                                 style: TextStyle(
                                     fontSize: 18, fontWeight: FontWeight.bold),
                               ),
@@ -79,43 +79,6 @@ class _DemandeMantenanceState extends State<DemandeMantenance> {
                         ]),
                       ),
                     );
-
-                    /* SizedBox(
-                  width: MediaQuery.of(context).size.width,
-                  height: MediaQuery.of(context).size.height / 3,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      SizedBox(
-                        width: MediaQuery.of(context).size.width / 1.25,
-                        child: const Text(
-                          "Vous Avez Une Demande De reservation Pour le 5/6/2023 ",
-                          style: TextStyle(color: Colors.green, fontSize: 24),
-                        ),
-                      ),
-                      Column(
-                        children: [
-                          IconButton(
-                            onPressed: () {},
-                            icon: const Icon(
-                              Icons.check,
-                              color: Colors.green,
-                              size: 30,
-                            ),
-                          ),
-                          IconButton(
-                            onPressed: () {},
-                            icon: const Icon(
-                              Icons.delete,
-                              color: Colors.green,
-                              size: 30,
-                            ),
-                          ),
-                        ],
-                      )
-                    ],
-                  ),
-              );*/
                   }),
             ),
           ],

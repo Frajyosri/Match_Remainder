@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:match_remainder/pages/HomePage.dart';
 import 'package:match_remainder/pages/Maintenance/Demande.dart';
+import 'package:match_remainder/pages/Maintenance/reservation.dart';
 import 'package:match_remainder/pages/equipe/DemandeEquipe.dart';
 
 class Dashboard extends StatefulWidget {
@@ -49,28 +51,38 @@ class _DashboardState extends State<Dashboard> {
                 crossAxisSpacing: 20,
                 mainAxisSpacing: 20,
                 children: [
-                  Container(
-                    height: MediaQuery.of(context).size.height / 3.5,
-                    decoration: const BoxDecoration(
-                        color: Colors.amberAccent,
-                        border: Border.fromBorderSide(BorderSide(
-                            width: 8, color: Color.fromARGB(164, 0, 125, 4)))),
-                    child: Column(
-                      children: [
-                        Image.asset(
-                          "assets/images/calender.png",
-                          width: MediaQuery.of(context).size.width / 3,
-                          height: MediaQuery.of(context).size.height / 7.5,
-                          color: Colors.black,
-                        ),
-                        const Padding(
-                          padding: EdgeInsets.all(8.0),
-                          child: Text(
-                            "Show Planning ",
-                            style: TextStyle(color: Colors.black, fontSize: 18),
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const homePage()));
+                    },
+                    child: Container(
+                      height: MediaQuery.of(context).size.height / 3.5,
+                      decoration: const BoxDecoration(
+                          color: Colors.amberAccent,
+                          border: Border.fromBorderSide(BorderSide(
+                              width: 8,
+                              color: Color.fromARGB(164, 0, 125, 4)))),
+                      child: Column(
+                        children: [
+                          Image.asset(
+                            "assets/images/calender.png",
+                            width: MediaQuery.of(context).size.width / 3,
+                            height: MediaQuery.of(context).size.height / 7.5,
+                            color: Colors.black,
                           ),
-                        )
-                      ],
+                          const Padding(
+                            padding: EdgeInsets.all(8.0),
+                            child: Text(
+                              "Show Planning ",
+                              style:
+                                  TextStyle(color: Colors.black, fontSize: 18),
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                   ),
                   GestureDetector(

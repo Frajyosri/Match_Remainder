@@ -105,8 +105,8 @@ class _homePageState extends State<homePage> {
               bottom: 0,
               child: Row(
                 children: [
-                  Image.network(
-                    "https://down.imgspng.com/download/0720/grass_PNG10857.png",
+                  Image.asset(
+                    "assets/images/grass.png",
                     width: MediaQuery.of(context).size.width,
                     height: MediaQuery.of(context).size.height / 5.5,
                   ),

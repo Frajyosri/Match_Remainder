@@ -79,43 +79,6 @@ class _DemandeEquipeState extends State<DemandeEquipe> {
                         ]),
                       ),
                     );
-
-                    /* SizedBox(
-                  width: MediaQuery.of(context).size.width,
-                  height: MediaQuery.of(context).size.height / 3,
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      SizedBox(
-                        width: MediaQuery.of(context).size.width / 1.25,
-                        child: const Text(
-                          "Vous Avez Une Demande De reservation Pour le 5/6/2023 ",
-                          style: TextStyle(color: Colors.green, fontSize: 24),
-                        ),
-                      ),
-                      Column(
-                        children: [
-                          IconButton(
-                            onPressed: () {},
-                            icon: const Icon(
-                              Icons.check,
-                              color: Colors.green,
-                              size: 30,
-                            ),
-                          ),
-                          IconButton(
-                            onPressed: () {},
-                            icon: const Icon(
-                              Icons.delete,
-                              color: Colors.green,
-                              size: 30,
-                            ),
-                          ),
-                        ],
-                      )
-                    ],
-                  ),
-              );*/
                   }),
             ),
           ],
